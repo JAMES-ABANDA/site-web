@@ -26,15 +26,30 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; left: 0;
+    top: 100%;
+    right: 0;       /* ← ici */
+    left: auto;     /* ← et ici */  
     width: 100%;
+    align-items: center; /* aligne chaque lien à droite */
+    display: none;
+    
+    top: 100%;
+    
     background: linear-gradient(135deg, var(--primary), var(--secondary));
-    padding: 1rem 0;
-    gap: 1rem;
-    z-index: 150;
+    flex-direction: column;
+    
+    
+    
+    z-index: 90;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
   }
   nav ul.active {
     display: flex;
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
   }
   nav ul li {
     margin: 0.5rem 0;
