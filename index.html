@@ -1,232 +1,288 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOLUTION DIGITAL | Votre partenaire digital</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Solution Digital - Produits électroniques, cosmétiques et services digitaux de qualité."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      defer
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="logo-container">
-            <div class="logo">SOLUTION DIGITAL</div>
-            <div class="tagline">Votre partenaire digital complet</div>
+      <div class="logo-container">
+        <img
+          src="css/img/preview2.png"
+          alt="Logo Solution Digital"
+          class="logo-image"
+        />
+        <div class="logo">SOLUTION DIGITAL</div>
+      </div>
+      <nav>
+        <div
+          class="mobile-menu"
+          aria-label="Menu mobile"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <i class="fas fa-bars"></i>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="#"><i class="fas fa-laptop"></i> Électronique</a></li>
-                <li><a href="#"><i class="fas fa-spa"></i> Cosmétiques</a></li>
-                <li><a href="#"><i class="fas fa-users"></i> Services</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-                <li>
-                    <a href="#" class="cart-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+          </li>
+          <li>
+            <a href="electronique.html" class="active"
+              ><i class="fas fa-laptop"></i> Électronique</a
+            >
+          </li>
+          <li>
+            <a href="cosmetiques.html"
+              ><i class="fas fa-spa"></i> Cosmétiques</a
+            >
+          </li>
+          <li>
+            <a href="services.html"><i class="fas fa-users"></i> Services</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="#" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>L'excellence digitale à portée de main</h1>
-        <p>Découvrez notre sélection premium d'appareils électroniques, produits cosmétiques et services de gestion de communauté digitale</p>
-        <button class="cta-button">Explorer la boutique</button>
+      <h1>L'excellence digitale à portée de main</h1>
+      <p>
+        Découvrez notre sélection premium d'appareils électroniques, produits
+        cosmétiques et services de gestion de communauté digitale
+      </p>
+      <button class="cta-button">Explorer la boutique</button>
     </section>
 
     <!-- Categories Section -->
     <section class="categories">
-        <h2 class="section-title">Nos Catégories</h2>
-        <p class="section-subtitle">Découvrez nos univers</p>
-        
-        <div class="category-grid">
-            <div class="category-card">
-                <div class="category-header electronic">
-                    <div class="category-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Électronique</h3>
-                </div>
-                <div class="category-content">
-                    <p>Téléphones, ordinateurs, consoles de jeux et accessoires high-tech pour votre quotidien connecté.</p>
-                    <button class="cta-button">Voir les produits</button>
-                </div>
+      <h2 class="section-title">Nos Catégories</h2>
+      <p class="section-subtitle">Découvrez nos univers</p>
+
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-header electronic">
+            <div class="category-icon">
+              <i class="fas fa-mobile-alt"></i>
             </div>
-            
-            <div class="category-card">
-                <div class="category-header cosmetic">
-                    <div class="category-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Cosmétiques</h3>
-                </div>
-                <div class="category-content">
-                    <p>Soins de la peau, maquillage professionnel et produits bien-être pour révéler votre beauté naturelle.</p>
-                    <button class="cta-button">Découvrir</button>
-                </div>
-            </div>
-            
-            <div class="category-card">
-                <div class="category-header service">
-                    <div class="category-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Services Digitaux</h3>
-                </div>
-                <div class="category-content">
-                    <p>Community management, stratégie digitale et création de contenu pour booster votre présence en ligne.</p>
-                    <button class="cta-button">En savoir plus</button>
-                </div>
-            </div>
+            <h3>Électronique</h3>
+          </div>
+          <div class="category-content">
+            <p>
+              Téléphones, ordinateurs, consoles de jeux et accessoires high-tech
+              pour votre quotidien connecté.
+            </p>
+            <button class="cta-button">Voir les produits</button>
+          </div>
         </div>
+
+        <div class="category-card">
+          <div class="category-header cosmetic">
+            <div class="category-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3>Cosmétiques</h3>
+          </div>
+          <div class="category-content">
+            <p>
+              Soins de la peau, maquillage professionnel et produits bien-être
+              pour révéler votre beauté naturelle.
+            </p>
+            <button class="cta-button">Découvrir</button>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header service">
+            <div class="category-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Services Digitaux</h3>
+          </div>
+          <div class="category-content">
+            <p>
+              Community management, stratégie digitale et création de contenu
+              pour booster votre présence en ligne.
+            </p>
+            <button class="cta-button">En savoir plus</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Products Section -->
     <section class="products">
-        <h2 class="section-title">Produits Populaires</h2>
-        <p class="section-subtitle">Nos best-sellers</p>
-        
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Smartphone Premium</h3>
-                    <p>128GB, Appareil photo 48MP</p>
-                    <div class="product-price">799€</div>
-                    <button class="add-to-cart">Ajouter au panier</button>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <i class="fas fa-laptop"></i>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Laptop Pro</h3>
-                    <p>16GB RAM, SSD 512GB</p>
-                    <div class="product-price">1299€</div>
-                    <button class="add-to-cart">Ajouter au panier</button>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <i class="fas fa-spa"></i>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Soin Visuel Premium</h3>
-                    <p>Crème hydratante jour/nuit</p>
-                    <div class="product-price">49€</div>
-                    <button class="add-to-cart">Ajouter au panier</button>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Palette Maquillage</h3>
-                    <p>12 couleurs mattes et nacrées</p>
-                    <div class="product-price">35€</div>
-                    <button class="add-to-cart">Ajouter au panier</button>
-                </div>
-            </div>
+      <h2 class="section-title">Produits Populaires</h2>
+      <p class="section-subtitle">Nos best-sellers</p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Smartphone Premium</h3>
+            <p>128GB, Appareil photo 48MP</p>
+            <div class="product-price">799€</div>
+            <button class="add-to-cart">Ajouter au panier</button>
+          </div>
         </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Laptop Pro</h3>
+            <p>16GB RAM, SSD 512GB</p>
+            <div class="product-price">1299€</div>
+            <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <i class="fas fa-spa"></i>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Soin Visuel Premium</h3>
+            <p>Crème hydratante jour/nuit</p>
+            <div class="product-price">49€</div>
+            <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Palette Maquillage</h3>
+            <p>12 couleurs mattes et nacrées</p>
+            <div class="product-price">35€</div>
+            <button class="add-to-cart">Ajouter au panier</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="services">
-        <h2 class="section-title">Nos Services Digitaux</h2>
-        <p class="section-subtitle">Boostez votre présence en ligne</p>
-        
-        <div class="service-cards">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Community Management</h3>
-                <p>Gestion complète de vos communautés sur les réseaux sociaux avec création de contenu engageant</p>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-bullhorn"></i>
-                </div>
-                <h3>Stratégie Digitale</h3>
-                <p>Planification et mise en œuvre de campagnes marketing digitales sur mesure</p>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-camera"></i>
-                </div>
-                <h3>Création de Contenu</h3>
-                <p>Production de visuels, vidéos et textes de qualité professionnelle pour votre marque</p>
-            </div>
+      <h2 class="section-title">Nos Services Digitaux</h2>
+      <p class="section-subtitle">Boostez votre présence en ligne</p>
+
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Community Management</h3>
+          <p>
+            Gestion complète de vos communautés sur les réseaux sociaux avec
+            création de contenu engageant
+          </p>
         </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Stratégie Digitale</h3>
+          <p>
+            Planification et mise en œuvre de campagnes marketing digitales sur
+            mesure
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Création de Contenu</h3>
+          <p>
+            Production de visuels, vidéos et textes de qualité professionnelle
+            pour votre marque
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h3>SOLUTION DIGITAL</h3>
-                <p>Votre partenaire complet pour l'électronique, les cosmétiques et les services digitaux de qualité supérieure.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Catégories</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Smartphones</a></li>
-                    <li><a href="#">Ordinateurs & Tablettes</a></li>
-                    <li><a href="#">Consoles de Jeux</a></li>
-                    <li><a href="#">Soins Visage</a></li>
-                    <li><a href="#">Maquillage</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Services</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Community Management</a></li>
-                    <li><a href="#">Stratégie Digitale</a></li>
-                    <li><a href="#">Création de Contenu</a></li>
-                    <li><a href="#">Formation Digitale</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
-                    <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
-                    <li><i class="fas fa-envelope"></i> contact@solution-digital.fr</li>
-                </ul>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>SOLUTION DIGITAL</h3>
+          <p>
+            Votre partenaire complet pour l'électronique, les cosmétiques et les
+            services digitaux de qualité supérieure.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2023 SOLUTION DIGITAL. Tous droits réservés.</p>
+
+        <div class="footer-column">
+          <h3>Catégories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Ordinateurs & Tablettes</a></li>
+            <li><a href="#">Consoles de Jeux</a></li>
+            <li><a href="#">Soins Visage</a></li>
+            <li><a href="#">Maquillage</a></li>
+          </ul>
         </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="#">Community Management</a></li>
+            <li><a href="#">Stratégie Digitale</a></li>
+            <li><a href="#">Création de Contenu</a></li>
+            <li><a href="#">Formation Digitale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+            <li><i class="fas fa-envelope"></i> contact@solution-digital.fr</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2023 SOLUTION DIGITAL. Tous droits réservés.</p>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
