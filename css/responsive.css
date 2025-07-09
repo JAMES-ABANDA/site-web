@@ -1,7 +1,13 @@
+/* responsive.css */
+
 /* ≤ 992px */
 @media (max-width: 992px) {
-  .hero h1 { font-size: 3rem; }
-  .hero p  { font-size: 1.3rem; }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
 }
 
 /* ≤ 768px — menu mobile + ajustements */
@@ -34,17 +40,40 @@
     margin: 0.5rem 0;
     text-align: center;
   }
+
   /* ajustements hero */
-  .hero h1 { font-size: 2.5rem; }
-  .hero p  { font-size: 1.2rem; }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+
   /* grilles 1 colonne */
-  .category-grid, .service-cards { grid-template-columns: 1fr; }
+  .category-grid,
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* ≤ 576px */
+/* ≤ 576px — très petits écrans */
 @media (max-width: 576px) {
-  .logo-container { flex-direction: column; align-items: flex-start; }
-  .hero           { height: 70vh; padding: 0 5%; }
-  .hero h1        { font-size: 2rem; }
-  .product-grid   { grid-template-columns: 1fr; }
+  .logo-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* réduire taille du logo texte */
+  .logo {
+    font-size: 1.25rem;
+  }
+  .hero {
+    height: 70vh;
+    padding: 0 5%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
