@@ -1,65 +1,50 @@
+/* ≤ 992px */
 @media (max-width: 992px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-    
-    .hero p {
-        font-size: 1.3rem;
-    }
+  .hero h1 { font-size: 3rem; }
+  .hero p  { font-size: 1.3rem; }
 }
 
+/* ≤ 768px — menu mobile + ajustements */
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
-        flex-direction: column;
-        padding: 2rem;
-        gap: 1.5rem;
-    }
-    
-    nav ul.active {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-    
-    .category-grid,
-    .service-cards {
-        grid-template-columns: 1fr;
-    }
+  /* burger icon */
+  .mobile-menu {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    z-index: 200;
+  }
+  /* menu caché / déroulé */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 1rem 0;
+    gap: 1rem;
+    z-index: 150;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  /* ajustements hero */
+  .hero h1 { font-size: 2.5rem; }
+  .hero p  { font-size: 1.2rem; }
+  /* grilles 1 colonne */
+  .category-grid, .service-cards { grid-template-columns: 1fr; }
 }
 
+/* ≤ 576px */
 @media (max-width: 576px) {
-    .logo-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .hero {
-        height: 70vh;
-        padding: 0 5%;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
+  .logo-container { flex-direction: column; align-items: flex-start; }
+  .hero           { height: 70vh; padding: 0 5%; }
+  .hero h1        { font-size: 2rem; }
+  .product-grid   { grid-template-columns: 1fr; }
 }
